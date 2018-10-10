@@ -47,6 +47,7 @@ h1.text-logo {
     align-self: flex-end;
     flex-wrap: wrap;
     max-width: 844px;
+    padding-left: 15px;
 }
 
 .links-panel {
@@ -150,7 +151,7 @@ fieldset.color-methods {
     padding: 10px 30px 44px 80px;
     font-size: 24px;
     line-height: 28px;
-
+    font-weight: 500;
 }
 
 .checkbox-red label {
@@ -296,6 +297,7 @@ fieldset.color-methods {
 
 p.promo-command {
     font-size: 48px;
+    font-weight: 500;
     line-height: 56px;
     color: #FFFFFF;
     max-width: 900px;
@@ -304,12 +306,114 @@ p.promo-command {
 
 p.promo-command-example {
     font-size: 48px;
+    font-weight: 500;
     line-height: 56px;
     color: #FFFFFF;
     text-align: center;
     margin-top: 55px
 }
 
-span.red {
+.red {
     color: #EC0D0D;
+}
+.gre {
+    color: #37CB04;
+}
+.yel {
+    color: #DADF08;
+}
+.blu {
+    color: #077FD7;
+}
+.mag {
+    color: #8B06BA;
+}
+.cya {
+    color: #04C0CC;
+}
+.whi {
+    color: #FFFFFF;
+}
+.log {
+    color: #FFFFFF;
+}
+
+.documentation {
+    min-height: 6521px;
+    margin: 202px 0 184px;
+}
+
+.documentation h2 {
+    font-size: 64px;
+    line-height: 75px;
+    color: #000000;
+    text-align: center;
+    padding-bottom: 35px;
+}
+
+div.install-command {
+    max-width: 510px;
+    min-height: 66px;
+    background-color: rgba(97, 95, 95, 0.87);
+    border-radius: 35px 35px 0 0;
+    margin: auto;
+}
+
+div.install-command p {
+    color: #FFFFFF;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 10px;
+}
+
+.example {
+    max-width: 92%;
+    min-height: 730px;
+    margin: auto;
+    border: 2px solid #615F5F;
+    border-radius: 35px;
+}
+
+.example:not(:first-of-type) {
+    margin-top: 66px;
+}
+
+.example h3 {
+    font-size: 48px;
+    line-height: 56px;
+    font-weight: 500;
+    padding: 53px 0 40px 44px;
+}
+
+.example p{
+    font-size: 36px;
+    line-height: 42px;
+    font-weight: 500;
+    padding: 40px 0 40px 36px;
+    min-height: 128px;
+}
+.example-to-use {
+    margin: 56px 16px 30px 16px;
+}
+.example-to-use h4 {
+    font-size: 36px;
+    line-height: 42px;
+
+    padding-left: 35px;
+}
+.example-command {
+    max-width: 829px;
+    min-height: 228px;
+    margin-top: 20px;
+    background-color: #615F5F;
+    border-radius: 35px;    
+}
+.example-command p{
+    font-size: 48px;
+    line-height: 60px;
+    font-weight: 500;
+    color: #FFFFFF;
+    padding: 20px;
 }
