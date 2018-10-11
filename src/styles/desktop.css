@@ -1,12 +1,13 @@
 body {
     max-width: 1440px;
-    font-family: "Roboto", sans-serif;
-    font-size: 36px;
-    line-height: 1;
     color: #000000;
     background-color: white;
 }
-
+body p, body h1, body h2, body h3, body h4, body h5 {
+    font-family: "Roboto", sans-serif;
+    font-size: 36px;
+    line-height: 42px;    
+}
 .header {
     width: 100%;
 }
@@ -304,43 +305,55 @@ p.promo-command {
     padding: 92px 0 90px 56px;
 }
 
-p.promo-command-example {
+div.promo-command-example{
+    width: 640px;
+    margin: auto;
+        
+}
+div.promo-command-example p {
     font-size: 48px;
     font-weight: 500;
     line-height: 56px;
     color: #FFFFFF;
-    text-align: center;
+    
     margin-top: 55px
 }
 
 .red {
     color: #EC0D0D;
 }
+
 .gre {
     color: #37CB04;
 }
+
 .yel {
     color: #DADF08;
 }
+
 .blu {
     color: #077FD7;
 }
+
 .mag {
     color: #8B06BA;
 }
+
 .cya {
     color: #04C0CC;
 }
+
 .whi {
     color: #FFFFFF;
 }
+
 .log {
     color: #FFFFFF;
 }
 
 .documentation {
     min-height: 6521px;
-    margin: 202px 0 184px;
+    margin: 202px 0 178px;
 }
 
 .documentation h2 {
@@ -361,8 +374,6 @@ div.install-command {
 
 div.install-command p {
     color: #FFFFFF;
-    font-size: 36px;
-    line-height: 42px;
     text-align: center;
     vertical-align: middle;
     padding-top: 10px;
@@ -387,33 +398,53 @@ div.install-command p {
     padding: 53px 0 40px 44px;
 }
 
-.example p{
-    font-size: 36px;
-    line-height: 42px;
+.example p {
     font-weight: 500;
-    padding: 40px 0 40px 36px;
+    padding: 40px 80px 40px 36px;
     min-height: 128px;
 }
-.example-to-use {
-    margin: 56px 16px 30px 16px;
-}
-.example-to-use h4 {
-    font-size: 36px;
-    line-height: 42px;
 
+.example-to-use {
+    margin: 14px 16px 30px 16px;
+}
+
+.example-to-use h5 {
     padding-left: 35px;
 }
+
 .example-command {
     max-width: 829px;
     min-height: 228px;
     margin-top: 20px;
     background-color: #615F5F;
-    border-radius: 35px;    
+    border-radius: 35px;
 }
-.example-command p{
+
+.example-command p {
     font-size: 48px;
     line-height: 60px;
     font-weight: 500;
     color: #FFFFFF;
     padding: 20px;
+}
+footer {
+    width: 100%;
+    min-height: 928px;
+    background-color: #615F5F;
+    color: #FFFFFF;    
+}
+div.authors {
+    height: 182px;    
+    padding: 60px 90px 40px 70px;
+}
+
+div.designer, div.author {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 58px;
+}
+
+p.author-name {    
+    font-size: 48px;
+    line-height: 56px;
 }
