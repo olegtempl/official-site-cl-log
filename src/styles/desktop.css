@@ -2,7 +2,6 @@ body {
     width: 1440px;
     color: #000000;
     background: #FFFFFF url("../images/patterns/pattern-gray1.png.png") repeat;
-    
 }
 
 body p,
@@ -23,10 +22,10 @@ body a {
 
 .logo {
     height: 971px;
-    background-color: #666666;
-    border: 4px solid #E5E5E5;
     display: flex;
     flex-direction: column;
+    background-color: #666666;
+    border: 4px solid #E5E5E5;
 }
 
 .img-logo {
@@ -51,19 +50,19 @@ body a {
 }
 
 h1.text-logo {
+    max-width: 844px;
+    align-self: flex-end;
+    flex-wrap: wrap;
     color: white;
     font-size: 64px;
     line-height: 75px;
-    align-self: flex-end;
-    flex-wrap: wrap;
-    max-width: 844px;
     padding-left: 15px;
 }
 
 .links-panel {
-    margin: auto;
     max-width: 859px;
     min-height: 190px;
+    margin: auto;
     color: #666666;
     background-color: #666666;
     border: 1px solid black;
@@ -318,7 +317,6 @@ p.promo-command {
 div.promo-command-example {
     width: 640px;
     margin: auto;
-
 }
 
 div.promo-command-example p {
@@ -326,7 +324,6 @@ div.promo-command-example p {
     font-weight: 500;
     line-height: 56px;
     color: #FFFFFF;
-
     margin-top: 55px
 }
 
@@ -365,7 +362,6 @@ div.promo-command-example p {
 .documentation {
     min-height: 6521px;
     margin: 202px 0 178px;
-    
 }
 
 .documentation h2 {
@@ -397,7 +393,7 @@ div.install-command p {
     margin: auto;
     border: 2px solid #615F5F;
     border-radius: 35px;
-    background-color: white;    
+    background-color: white;
 }
 
 .example:not(:first-of-type) {
@@ -431,16 +427,15 @@ div.install-command p {
     margin-top: 20px;
     background-color: #615F5F;
     border-radius: 35px;
-    
 }
 
 .example-command p {
+    display: inline;
     font-size: 48px;
     line-height: 70px;
     font-weight: 500;
     color: #FFFFFF;
     padding: 20px;
-    display: inline;
 }
 
 footer {
