@@ -1,13 +1,22 @@
 body {
-    max-width: 1440px;
+    width: 1440px;
     color: #000000;
-    background-color: white;
+    background: #FFFFFF url("../images/patterns/pattern-gray1.png.png") repeat;
+    
 }
-body p, body h1, body h2, body h3, body h4, body h5 {
+
+body p,
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body a {
     font-family: "Roboto", sans-serif;
     font-size: 36px;
-    line-height: 42px;    
+    line-height: 42px;
 }
+
 .header {
     width: 100%;
 }
@@ -110,6 +119,7 @@ fieldset.color-methods {
     border-radius: 35px 35px 0 0;
     margin: 100px auto 0 auto;
     text-align: center;
+    background-color: white;
 }
 
 .color {
@@ -305,17 +315,18 @@ p.promo-command {
     padding: 92px 0 90px 56px;
 }
 
-div.promo-command-example{
+div.promo-command-example {
     width: 640px;
     margin: auto;
-        
+
 }
+
 div.promo-command-example p {
     font-size: 48px;
     font-weight: 500;
     line-height: 56px;
     color: #FFFFFF;
-    
+
     margin-top: 55px
 }
 
@@ -354,6 +365,7 @@ div.promo-command-example p {
 .documentation {
     min-height: 6521px;
     margin: 202px 0 178px;
+    
 }
 
 .documentation h2 {
@@ -385,6 +397,7 @@ div.install-command p {
     margin: auto;
     border: 2px solid #615F5F;
     border-radius: 35px;
+    background-color: white;    
 }
 
 .example:not(:first-of-type) {
@@ -405,7 +418,7 @@ div.install-command p {
 }
 
 .example-to-use {
-    margin: 14px 16px 30px 16px;
+    margin: 25px 16px 24px 16px;
 }
 
 .example-to-use h5 {
@@ -418,33 +431,144 @@ div.install-command p {
     margin-top: 20px;
     background-color: #615F5F;
     border-radius: 35px;
+    
 }
 
 .example-command p {
     font-size: 48px;
-    line-height: 60px;
+    line-height: 70px;
     font-weight: 500;
     color: #FFFFFF;
     padding: 20px;
+    display: inline;
 }
+
 footer {
     width: 100%;
     min-height: 928px;
     background-color: #615F5F;
-    color: #FFFFFF;    
+    color: #FFFFFF;
 }
+
 div.authors {
-    height: 182px;    
+    min-height: 182px;
     padding: 60px 90px 40px 70px;
 }
 
-div.designer, div.author {
+div.designer,
+div.author {
     display: flex;
     justify-content: space-between;
     padding-top: 58px;
 }
 
-p.author-name {    
+p.author-name {
     font-size: 48px;
     line-height: 56px;
+}
+
+div.contacts {
+    min-height: 510px;
+    padding: 30px 90px 40px 70px;
+}
+
+div.contacts h3 {
+    font-size: 48px;
+    line-height: 56px;
+    font-weight: 500;
+    text-align: center;
+}
+
+div.footer-social {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+div.social-platforms {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0 0 0;
+}
+
+div.social-platforms h4 {
+    font-size: 46px;
+    line-height: 54px;
+    font-weight: 500;
+}
+
+
+.social-btn {
+    position: relative;
+    padding: 70px 0 0 120px;
+    color: #ffffff;
+    font-size: 46px;
+    font-weight: 500;
+    line-height: 54px;
+    text-decoration: none;
+    cursor: pointer;
+    height: 50px;
+
+}
+
+.social-btn::before {
+    content: "";
+    position: absolute;
+    background: url("../images/other/spritesheet-social.png") no-repeat;
+    width: 105px;
+    height: 110px;
+    margin: -40px -130px;
+}
+
+a.linkedin::before {
+    background-position: 0 0;
+}
+
+a.slack::before {
+    background-position: -220px 0;
+}
+
+a.mail::before {
+    background-position: -109px 0;
+}
+
+.social-btn:hover,
+.social-btn:active {
+    text-decoration: underline;
+}
+
+div.oficial-site {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    margin-top: 30px;
+}
+
+div.oficial-site p {
+    font-size: 48px;
+    line-height: 56px;
+    padding-right: 25px;
+}
+
+.bear-software {
+    font-size: 46px;
+    line-height: 54px;
+    font-weight: 500;
+    padding-left: 85px;
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+div.oficial-site a:hover {
+    text-decoration: underline;
+}
+
+div.oficial-site img {
+    margin-top: 30px;
+    background-color: #FFFFFF;
+    border-radius: 35px;
+    cursor: pointer;
+    width: 685px;
+    height: 335px;
 }
