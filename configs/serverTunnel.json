@@ -1,0 +1,9 @@
+ {
+    "server": {
+        "baseDir": "prodaction/"
+    },
+    "tunnel": true,
+    "host": "localhost",
+    "port": 8081, 
+    "logPrefix": "Frontend_medved"
+}

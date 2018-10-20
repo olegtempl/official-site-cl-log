@@ -1,0 +1,27 @@
+{
+    "build": {
+      "html": "Build prodaction version html",
+      "css": "Build prodaction version css",
+      "js": "Build prodaction version js",
+      "image": "Build prodaction image",
+      "fonts": "Build fonts on prodaction"
+    },
+		"validation": {
+      "html": "Validation for html started",
+      "js": "Validation for js started"
+    },
+    "tests": {
+      "mocha": "Start the Mocha tests",
+      "jasmine": "Start the Jasmine tests",
+      "gui": "Start the Gui tests",
+      "screenshots": "Start the make screenshots",
+      "pageSpeed": "Start the page speed tests"
+    },
+    "servers": {
+      "selenium": "Start the selenium server"
+    },
+    "documentation": {
+      "jsDoc": "Start the generation jsDoc - documentation",
+      "readme": "Start the generation README - documentation"
+    }
+}
