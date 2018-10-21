@@ -1,0 +1,182 @@
+@media (max-device-width: 413px) {
+	.main__headline_device_min {
+		display: block;
+		padding-bottom: 0;
+	}
+
+	.main__headline {
+		font-size: 48px;
+		line-height: 56px;
+	}
+	p,
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	a {
+		font-family: "Roboto", sans-serif;
+		font-size: 18px;
+		line-height: 21px;
+  }
+/*
+    Header
+*/
+.logo {
+  border: 0 solid #E5E5E5;
+  border-radius: 0 0 35px 35px;
+}
+.header-logo {
+  width: 76%;
+  height: 450px;
+  margin-left: 8%;
+  margin-top: 5%;
+}
+
+.header-logo::after {
+  top: 50px;
+  left: 340px;
+  width: 400px;
+  height: 300px;
+}
+
+.links-panel {
+  width: 90%;
+}
+
+/*
+  Install command
+*/
+.install-command_device_min {
+  display: block;
+  width: 100%;
+  margin: 51px 0 74px 0;
+  padding: 18px 0;
+  border-radius: 0;
+}
+.install-command {
+  display: none;
+}
+/*
+    Promo
+*/
+.promo-command-example {
+  width: 90%;
+  margin: auto;
+  padding-bottom: 0;
+}
+.promo-command {
+  font-size: 24px;
+  line-height: 28px;
+  padding: 0 5px 0 15px;
+}
+
+.promo-command-example__text {
+  font-size: 36px;
+  line-height: 42px;
+  margin-top: 30px;
+}
+.promo-field {
+  width: 100%;
+  border: 0 solid #E5E5E5;
+}
+
+
+.color-checkbox__text {
+  padding: 10px 5px 44px 80px;
+}
+
+// examples
+  .example__text {
+		padding: 0 80px 0 36px;
+  }
+	.example-to-use {
+		margin: 25px 0;
+	}
+
+	.example-to-use__headline {
+		text-align: center;
+	}
+
+	.example-command {
+		width: 96%;
+		margin-right: 0;
+		border-radius: 0;
+		padding: 20px;
+	}
+
+	.example-command__text {
+		display: inline;
+		font-size: 24px;
+		line-height: 60px;
+	}
+
+  .example-to-use__headline {
+		font-size: 24px;
+		line-height: 28px;
+  }
+  .example__headline {
+		font-size: 24px;
+		line-height: 28px;
+  }
+  .example {
+		width: 99%;
+	}
+
+// footer
+.authors {
+  padding: 0 30px 40px 10px;
+}
+
+.author-work,
+.author-name {
+  font-size: 24px;
+  line-height: 28px;
+}
+.contacts {
+  padding: 30px 30px 40px 20px;
+}
+
+.contacts__header {
+  font-size: 36px;
+  line-height: 42px;
+}
+.social-platforms__header {
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center
+}
+.social-btn {
+  font-size: 24px;
+  line-height: 28px;
+}
+
+  .oficial-site {
+		width: 100%;
+		margin-top: 80px;
+		text-align: center;
+	}
+
+	.oficial-site__text {
+		display: flex;
+		flex-direction: column;
+		margin: auto;
+		font-size: 36px;
+		line-height: 42px;
+	}
+
+	.oficial-site__link {
+		font-size: 18px;
+		line-height: 21px;
+		padding-left: 0;
+	}
+
+	.logo-bear {
+		margin-top: 30px;
+		background-color: #FFFFFF;
+		border-radius: 35px;
+		cursor: pointer;
+		width: 100%;
+		height: 100%;
+	}
+}

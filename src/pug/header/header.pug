@@ -1,0 +1,79 @@
+header
+	.logo-wrap
+		.logo
+			img.logo__img(src="images/logo/logo.png" alt="Logo")
+		h1.logo__headline The main task of color is to serve expressiveness.
+	.install-command.install-command_device_min
+		p.install-command__text  npm i --save-dev node-cl-log
+	//- Promo-field
+	.promo-field
+		p.promo-command
+			|  > npm i --save-dev node-cl-log
+			br
+			|  > const cl = require('node-cl-log');
+			br
+			|  > cl.red('Hello colorful world in console');
+		.promo-command-example
+			p.promo-command-example__text
+				span.color_red Hello colorful world in console
+		ul.links-panel__list
+			li.links-panel__item.git
+				a.links-panel__link(href="#") Github
+			li.links-panel__item.npm
+				a.links-panel__link(href="#") Npm
+
+	//- nav.links-panel
+
+
+
+//- h2.main__headline.main__headline_device_min Demo
+.color-methods-panel
+	fieldset.color-methods
+		.container-checkbox
+			.wrap-checkbox-round
+				.round
+					input#red.color-checkbox__input_color_red(type="checkbox")
+					label(for="red")
+			p.color-text__method-red red
+		.container-checkbox
+			.wrap-checkbox-round
+				.round
+					input#gre.color-checkbox__input_color_green(type="checkbox")
+					label(for="gre")
+			p.color-text__method-green gre
+		.container-checkbox
+			.wrap-checkbox-round
+				.round
+					input#yel.color-checkbox__input_color_yellow(type="checkbox")
+					label(for="yel")
+			p.color-checkbox__text_color-yellow yel
+		.container-checkbox
+			.wrap-checkbox-round
+				.round
+					input#blu.color-checkbox__input_color_blue(type="checkbox")
+					label(for="blu")
+			p.color-text__method-blue blu
+		.container-checkbox
+			.wrap-checkbox-round
+				.round
+					input#mag.color-checkbox__input_color_magenta(type="checkbox")
+					label(for="mag")
+			p.color-text__method-magenta mag
+		.container-checkbox
+			.wrap-checkbox-round
+				.round
+					input#cya.color-checkbox__input_color_cyan(type="checkbox")
+					label(for="cya")
+			p.color-text__method-cyan cya
+		.container-checkbox
+			.wrap-checkbox-round
+				.round
+					input#whi.color-checkbox__input_color_white(type="checkbox")
+					label(for="whi")
+			p.color-text__method-white whi
+		.container-checkbox
+			.wrap-checkbox-round
+				.round
+					input#log.color-checkbox__input_color_log(type="checkbox")
+					label(for="log")
+			p.color-text__method-log log

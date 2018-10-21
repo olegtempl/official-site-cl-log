@@ -1,0 +1,44 @@
+@import 'reset';
+@import 'colors';
+
+body {
+	color: #000000;
+	background: url("../images/patterns/pattern-gray-crop.png") repeat;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+a {
+	font-family: "Roboto", sans-serif;
+	font-size: 36px;
+	line-height: 42px;
+}
+
+
+
+
+@import 'header/header';
+/*
+            main
+*/
+@import 'main/block_promo';
+@import 'main/documentation';
+// @import 'main/block_1';
+// @import 'main/block_2';
+// @import 'main/block_3';
+// @import 'main/block_4';
+// @import 'main/block_5';
+// @import 'main/block_6';
+// @import 'main/block_7';
+// @import 'main/block_8';
+/*
+            footer
+*/
+@import 'footer/footer';
+// @import 'header/sprite';
+
+@import 'media';

@@ -1,0 +1,108 @@
+/*
+  Documentation
+*/
+
+.documentation {
+	margin: 202px 0 178px;
+}
+
+.main__headline {
+	font-size: 64px;
+	line-height: 75px;
+	color: #000000;
+	text-align: center;
+	padding-bottom: 35px;
+}
+
+.main__headline_device_min {
+	display: none;
+}
+
+/*
+  Install-command
+*/
+.install-command {
+	width: 510px;
+	background-color: $bgcolor-install-command;
+	border-radius: 35px 35px 0 0;
+	margin: auto;
+}
+
+.install-command__text {
+	color:
+  $color-text-install-command;
+	text-align: center;
+	vertical-align: middle;
+	padding-top: 10px;
+}
+
+.install-command_device_min {
+	display: none;
+}
+/*
+  Example
+*/
+.example {
+	width: 92%;
+	margin: auto;
+	border: 2px solid $color-example-section-border;
+	border-radius: 35px;
+	background-color: $bgcolor-example-section;
+  &:not(:first-of-type) {
+    margin-top: 66px;
+  }
+  &__headline {
+    font-size: 48px;
+    line-height: 56px;
+    font-weight: 600;
+    padding: 53px 0 40px 44px;
+  }
+  &__text {
+    font-weight: 500;
+    padding: 40px 80px 40px 36px;
+    min-height: 128px;
+  }
+  &-to-use {
+    margin: 25px 16px 24px 16px;
+  }
+  &-to-use__headline {
+    padding-left: 35px;
+  }
+  &-command {
+    width: 65%;
+    margin: 20px 10px 0 0;
+    background-color: $bgcolor-example-command;
+    border-radius: 35px;
+    padding: 20px 20px 80px 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  &-command__text {
+    display: inline;
+    font-size: 48px;
+    line-height: 70px;
+    font-weight: 500;
+    color: $color-example-command-text;
+    margin-bottom: 45px;
+  }
+  .result-command-wrap {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20%;
+    .result-text {
+
+    }
+  }
+}
+
+.arrow {
+
+  margin-bottom: 50px;
+  &:after {
+    content: '\21A7';
+    font-size: 160px;
+
+  }
+
+}

@@ -1,0 +1,136 @@
+/*
+  Footer
+*/
+
+
+footer {
+	width: 100%;
+	min-height: 928px;
+	background-color: #615F5F;
+  color: #FFFFFF;
+  &-social {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+}
+
+.authors {
+  padding: 60px 120px 40px 70px;
+  &-name__designer {
+    font-weight: 400;
+  }
+  &-name {
+    font-size: 48px;
+    line-height: 56px;
+    font-weight: 600;
+  }
+}
+
+
+.designer,
+.author {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding-top: 58px;
+}
+
+.contacts {
+  padding: 30px 90px 40px 70px;
+  &__header {
+    font-size: 48px;
+    line-height: 56px;
+    font-weight: 500;
+    text-align: center;
+  }
+
+}
+/*
+ Social
+*/
+
+.social {
+  &-platforms {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0 0 0;
+  }
+  &-platforms__header {
+    font-size: 46px;
+    line-height: 54px;
+    font-weight: 500;
+  }
+  &-btn {
+    position: relative;
+    padding: 70px 0 0 120px;
+    color: #ffffff;
+    font-size: 46px;
+    font-weight: 500;
+    line-height: 54px;
+    text-decoration: none;
+    cursor: pointer;
+    height: 50px;
+  }
+  &-btn::before {
+    content: "";
+    position: absolute;
+    background: url("../images/other/spritesheet-social.png") no-repeat;
+    width: 105px;
+    height: 110px;
+    margin: -40px -130px;
+  }
+}
+
+.social-btn:hover,
+.social-btn:active {
+	text-decoration: underline;
+}
+
+.linkedin::before {
+	background-position: 0 0;
+}
+
+.slack::before {
+	background-position: -220px 0;
+}
+
+.mail::before {
+	background-position: -109px 0;
+}
+
+.oficial-site {
+	display: flex;
+	flex-direction: column;
+	text-align: right;
+  margin-top: 30px;
+  &__text {
+    font-size: 48px;
+    line-height: 56px;
+    padding-right: 25px;
+  }
+  &__link {
+    font-size: 46px;
+    line-height: 54px;
+    font-weight: 500;
+    padding-left: 85px;
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  &__link:hover {
+    text-decoration: underline;
+  }
+}
+
+
+.logo-bear {
+	margin-top: 30px;
+	background-color: #FFFFFF;
+	border-radius: 35px;
+	cursor: pointer;
+	width: 685px;
+	height: 335px;
+}
+

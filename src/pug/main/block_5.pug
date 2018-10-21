@@ -1,0 +1,17 @@
+section.example.mag-command
+	h3.example__headline
+		| Text output in the console in
+		span.color-text__method-magenta  magenta color
+	p.example__text
+		| "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+		| aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+	.example-to-use.color-text__method-magenta
+		h5.example-to-use__headline example to use:
+		.example-command
+			p.example-command__text
+				| const cl = require('node-cl-log');
+				br
+				| cl.mag('Hi, I'm magenta!');
+			.result-command-wrap
+				p.arrow.color-text__method-magenta
+				p.result-text.color-text__method-magenta Hi, I'm magenta!
