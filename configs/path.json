@@ -1,8 +1,8 @@
 {
    "src": {
-      "pug": "src/pug/*.pug",
+      "pug": "src/pug/**/**/*.pug",
       "js": "src/js/",
-      "scss": "src/styles/**/*.scss",
+      "scss": "src/styles/**/**/*.scss",
       "images": "src/images/",
       "fonts": "src/fonts/"
    },
@@ -10,8 +10,8 @@
       "html": "build/",
       "js": "build/js/",
       "css": "build/styles/",
-      "images": "build/images/**/*",
-      "fonts": "build/fonts/**/*"
+      "images": "build/images/",
+      "fonts": "build/fonts/"
    },
    "prodaction": {
       "html": "public/",
