@@ -1,0 +1,61 @@
+<div class="container-checkbox">
+  <!--
+    <div class="wrap-checkbox-round">
+      <div class="round">
+        <input on:click="printInfoForMethodYel()" class={$classeColorCheckbox} id={$idCheckboxes} type="checkbox" />
+        <label for={$labelForIdCheckboxes}></label>
+      </div>
+    </div>
+    <p class={$classesColorText}>{text}</p>
+  -->
+  <p class="{classesColorText}">
+    <input on:click="printInfoForMethodYel()" name="color" type="radio" />
+    {methodName}
+  </p>
+</div>
+
+<script>
+  import allData from "../../../data/allData"
+  import cl from "node-cl-log"
+
+  export default {
+    data() {
+      return {
+        classeColorCheckbox: "color-checkbox__input_color_yellow",
+        classesColorText: "color-text__method-yellow",
+        // labelForIdCheckboxes: "yellow",
+        // idCheckboxes: "yellow",
+        methodName: allData.methodYelEn.methodName
+      }
+    },
+    methods: {
+      printInfoForMethodYel() {
+        store.set({
+          classColorText: "color-text__method-yellow",
+          classSection: "yel-command",
+          methodName: allData.methodYelEn.methodName,
+          colorNameOnPage: allData.methodYelEn.colorName,
+          exampleTextOnPage: allData.methodYelEn.exampleText
+          // colorNameRu: allData.methodYelRu.colorName,
+          // exampleTextRu: allData.methodYelRu.exampleText,
+          // colorNameBy: allData.methodYelBy.colorName,
+          // exampleTextBy: allData.methodYelBy.exampleText
+        })
+        // cl.yel(`Hi, I'm yellow color text!`)
+      }
+    }
+  }
+</script>
+
+<style>
+  .round
+    input[type="checkbox"].color-checkbox__input_color_yellow:checked
+    + label {
+    background-color: #dadf08;
+    border-color: #dadf08;
+  }
+
+  .color-text__method-yellow {
+    color: #dadf08;
+  }
+</style>

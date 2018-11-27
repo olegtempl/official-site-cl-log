@@ -1,0 +1,180 @@
+<!-- "The main task of color is to serve expressiveness." -->
+<!--
+  TODO:
+    * add tag code
+    * вставить в язык страницы перменную из стор
+    * добавить шапку с стилями
+ -->
+<header>
+    <Logo/>
+    <LanguagePanel/>
+    <div class="install-command install-command_device_min">
+        <code class="install-command__text">
+           > npm i --save-dev node-cl-log
+        </code>
+    </div>
+    <PromoField/>
+</header>
+
+<script>
+
+import Logo from './Logo.html';
+import PromoField from './PromoField.html';
+import LanguagePanel from './LanguagePanel.html';
+
+export default {
+    data() {
+        return {
+        }
+    },
+    methods: {
+
+    },
+    components: {
+      Logo,
+      LanguagePanel,
+      PromoField
+    }
+}
+</script>
+
+
+<style>
+/*
+  Header
+*/
+
+header {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+/*
+  Logo
+*/
+
+.logo-wrap {
+  background-color: #615F5F;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 20rem;
+}
+
+.logo {
+  padding: 2rem;
+  border-radius: 4%;
+  border: 4px solid #E5E5E5;
+  margin-right: 30px;
+}
+
+.logo__img {
+  background-color: #E5E5E5;
+  border-radius: 4%;
+  border: 4px solid #E5E5E5;
+}
+
+.logo__headline {
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  color: white;
+  font-size: 64px;
+  line-height: 75px;
+}
+
+/*
+  Links-panel
+*/
+
+.links-panel {
+  width: 69%;
+  min-height: 190px;
+  margin: 0 auto 100px auto;
+  color: #666666;
+  background-color: rgba(97, 95, 95, 0.87);
+  border-radius: 0 0 35px 35px;
+}
+
+.links-panel__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.links-panel__item {
+  width: 360px;
+  height: 130px;
+  background-color: rgba(97, 95, 95, 0.38);
+  border: 1px solid white;
+  text-align: center;
+  cursor: pointer;
+}
+
+.links-panel__item:hover {
+  -webkit-box-shadow: 1px 1px 5px 1px white;
+  box-shadow: 1px 1px 5px 1px white;
+}
+
+.links-panel__item:active {
+  -webkit-box-shadow: inset 1px 1px 3px 1px white;
+  box-shadow: inset 1px 1px 3px 1px white;
+}
+
+.links-panel__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-decoration: none;
+  padding-top: 10%;
+  color: white;
+  font-size: 48px;
+}
+
+/*
+  Buttons
+*/
+
+.git {
+  border-bottom-left-radius: 35px;
+  margin: 35px 1px 10px auto;
+}
+
+.npm {
+  border-bottom-right-radius: 35px;
+  margin: 35px auto 10px 1px;
+}
+
+</style>

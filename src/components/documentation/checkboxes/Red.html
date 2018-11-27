@@ -1,0 +1,65 @@
+<div class="container-checkbox">
+  <!--
+    <div class="wrap-checkbox-round">
+    <div class="round">
+      <input on:click="printInfoForMethodRed()" class={classeColorCheckbox} id={idCheckboxes} type="radio"   />
+      <label for={labelForIdCheckboxes}></label>
+    </div>
+  -->
+
+  <p class="{classesColorText}">
+    <input
+      on:click="printInfoForMethodRed()"
+      name="color"
+      type="radio"
+      checked
+    />
+    {methodName}
+  </p>
+</div>
+
+<script>
+  import allData from "../../../data/allData"
+  import cl from "node-cl-log"
+
+  export default {
+    data() {
+      return {
+        classeColorCheckbox: "color-checkbox__input_color_red",
+        classesColorText: "color-text__method-red",
+        // labelForIdCheckboxes: "red",
+        // idCheckboxes: "red",
+        methodName: allData.methodRedEn.methodName
+      }
+    },
+    methods: {
+      printInfoForMethodRed() {
+        store.set({
+          classColorText: "color-text__method-red",
+          classSection: "red-command",
+          methodName: allData.methodRedEn.methodName,
+          colorNameOnPage: allData.methodRedEn.colorName,
+          exampleTextOnPage: allData.methodRedEn.exampleText
+          // colorNameRu: allData.methodRedRu.colorName,
+          // exampleTextRu: allData.methodRedRu.exampleText,
+          // colorNameBy: allData.methodRedBy.colorName,
+          // exampleTextBy: allData.methodRedBy.exampleText,
+        })
+        // cl.red(`Hi, I'm red color text!`)
+      }
+    }
+  }
+</script>
+
+<style>
+  .round
+    input[type="checkbox"].color-checkbox__input_color_red:checked
+    + label {
+    background-color: #ec0d0d;
+    border-color: #ec0d0d;
+  }
+
+  .color-text__method-red {
+    color: #ec0d0d;
+  }
+</style>

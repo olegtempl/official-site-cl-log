@@ -1,0 +1,137 @@
+<!--
+  {#if $languagePage=="ru"}
+    <p>{x} is less than 5</p>
+  {:elseif $languagePage=="by"}
+    <p>{x} is less than 5</p>
+  {:else}
+    <p>english (default)</p>
+-->
+<!-- {/if} -->
+
+<section class="example {$classSection}" hidden="{$hiddenInfoForMethod}">
+  <h3 class="example__headline">
+    {$exampleToUseHeadlineOnPage}
+    <span class="{$classColorText}">{$colorNameOnPage}</span> color
+  </h3>
+  <p class="example__text">{$exampleTextOnPage}</p>
+  <div class="example-to-use ">
+    <h5 class="example-to-use__headline {$classColorText}">example to use:</h5>
+    <div class="example-command">
+      <code class="example-command__text">
+        const cl = require('node-cl-log'); <br />
+        cl.{$methodName}('Hi, I'm {$colorNameOnPage} text!');
+      </code>
+      <div class="result-command-wrap">
+        <p class="arrow {$classColorText}"></p>
+        <p class="result-text {$classColorText}">
+          Hi, I'm {$colorNameOnPage} color text!'
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  export default {
+    data() {
+      return {}
+    },
+    methods: {}
+  }
+</script>
+
+<style>
+  .container-checkbox {
+    margin: 2rem 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .wrap-checkbox-round {
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    padding: 15px;
+    margin-right: 0.5rem;
+  }
+
+  .round {
+    position: relative;
+  }
+
+  .round label {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 28px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 28px;
+  }
+
+  .round input[type="checkbox"] {
+    visibility: hidden;
+  }
+
+  .round input[type="checkbox"]:checked + label:after {
+    opacity: 1;
+  }
+
+  /*
+  Color-methods-panel
+*/
+
+  .color-methods {
+    min-height: 154px;
+    border: 4px solid #e5e5e5;
+    border-radius: 35px 35px 0 0;
+    background-color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .color-methods-panel {
+    width: 84%;
+    margin: 0 auto;
+  }
+
+  .color-text__method-magenta {
+    color: #8b06ba;
+  }
+
+  .color-text__method-green {
+    color: #37cb04;
+  }
+
+  .color-text__method-blue {
+    color: #077fd7;
+  }
+
+  .color-text__method-cyan {
+    color: #04c0cc;
+  }
+
+  .color-text__method-yellow {
+    color: #dadf08;
+  }
+
+  .color-text__method-red {
+    color: #ec0d0d;
+  }
+</style>

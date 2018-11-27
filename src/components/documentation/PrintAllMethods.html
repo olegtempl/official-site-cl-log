@@ -1,0 +1,130 @@
+ <!--
+  TODO:
+    * clear data
+
+  -->
+
+ <!-- on english language  -->
+ {#each methodsAttributes as {classColorText, classSection, methodName, colorNameOnPage, exampleTextOnPage}}
+ {#each Object.entries(dataEn) as dataEn}
+<section class="example { classSection }" hidden={$hiddenAllMethods}>
+  <h3 class="example__headline">
+    { dataEn.exampleHeadline }
+    <span class="{ classColorText }"> {colorNameOnPage + dataEn.exampleSpan }</span>
+  </h3>
+  <p class="example__text">
+    { exampleTextOnPage }
+  </p>
+  <div class="example-to-use { classColorText }">
+    <h5 class="example-to-use__headline"> { dataEn.exampleToUseHeadline }:</h5>
+    <div class="example-command">
+      <p class="example-command__text">
+        const cl = require('node-cl-log');
+        <br />
+        { dataEn.exampleCommandTextUseMethod + colorNameOnPage}!');
+      </p>
+      <div class="result-command-wrap">
+        <p class="arrow { classColorText }"> </p>
+        <p class="result-text { classColorText }">{dataEn.resultTextUseMethod + colorNameOnPage})!</p>
+      </div>
+    </div>
+  </div>
+</section>
+{/each}
+{/each}
+
+
+<script>
+import allData from '../../data/allData';
+
+  export default {
+    data() {
+      return {
+        dataEn : {
+            exampleHeadline: allData.methodsDataEn.exampleHeadline,
+            exampleSpan:  allData.methodsDataEn.exampleSpan,
+            exampleToUseHeadline: allData.methodsDataEn.exampleToUseHeadline,
+            exampleCommandTextUseMethod: allData.methodsDataEn.exampleCommandTextUseMethod,
+            resultTextUseMethod:  allData.methodsDataEn.resultTextUseMethod
+        },
+        dataRu : {
+            exampleHeadline: allData.methodsDataRu.exampleHeadline,
+            exampleSpan:  allData.methodsDataRu.exampleSpan,
+            exampleToUseHeadline: allData.methodsDataRu.exampleToUseHeadline,
+            exampleCommandTextUseMethod: allData.methodsDataRu.exampleCommandTextUseMethod,
+            resultTextUseMethod:  allData.methodsDataRu.resultTextUseMethod
+        },
+        dataBy : {
+            exampleHeadline: allData.methodsDataBy.exampleHeadline,
+            exampleSpan:  allData.methodsDataBy.exampleSpan,
+            exampleToUseHeadline: allData.methodsDataBy.exampleToUseHeadline,
+            exampleCommandTextUseMethod: allData.methodsDataBy.exampleCommandTextUseMethod,
+            resultTextUseMethod:  allData.methodsDataBy.resultTextUseMethod
+        },
+        methodsAttributes: [
+          {
+            classColorText: "color-text__method-red",
+            classSection: "red-command",
+            methodName: allData.methodRedEn.methodName,
+            colorNameOnPage: allData.methodRedEn.colorName,
+            exampleTextOnPage: allData.methodRedEn.exampleText,
+          },
+          {
+            classColorText: "color-text__method-green",
+            classSection: "gre-command",
+            methodName: allData.methodGreEn.methodName,
+            colorNameOnPage: allData.methodGreEn.colorName,
+            exampleTextOnPage: allData.methodGreEn.exampleText,
+          },
+          {
+            classColorText: "color-text__method-yellow",
+            classSection: "yel-command",
+            methodName: allData.methodYelEn.methodName,
+            colorNameOnPage: allData.methodYelEn.colorName,
+            exampleTextOnPage: allData.methodYelEn.exampleText,
+          },
+          {
+            classColorText: "color-text__method-blue",
+            classSection: "blu-command",
+            methodName: allData.methodBluEn.methodName,
+            colorNameEn: allData.methodBluEn.colorName,
+            exampleTextEn: allData.methodBluEn.exampleText
+          },
+          {
+            classColorText: "color-text__method-magenta",
+            classSection: "mag-command",
+            methodName: allData.methodMagEn.methodName,
+            colorNameOnPage: allData.methodMagEn.colorName,
+            exampleTextOnPage: allData.methodMagEn.exampleText,
+          },
+          {
+            classColorText: "color-text__method-cyan",
+            classSection: "cya-command",
+            methodName: allData.methodCyaEn.methodName,
+            colorNameOnPage: allData.methodCyaEn.colorName,
+            exampleTextEn: allData.methodCyaEn.exampleText,
+
+          },
+          {
+            classColorText: "color-text__method-white",
+            classSection: "whi-command",
+            methodName: allData.methodWhiEn.methodName,
+            colorNameOnPage: allData.methodWhiEn.colorName,
+            exampleTextOnPage: allData.methodWhiEn.exampleText,
+          },
+          {
+            classColorText: "color-text__method-log",
+            classSection: "log-command",
+            methodName: allData.methodLogEn.methodName,
+            colorNameOnPage: allData.methodLogEn.colorName,
+            exampleTextOnPage: allData.methodLogEn.exampleText,
+          }
+        ]
+      }
+    },
+      methods: {
+
+      }
+
+    }
+</script>

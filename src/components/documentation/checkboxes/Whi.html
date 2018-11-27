@@ -1,0 +1,48 @@
+<div class="container-checkbox">
+  <!--
+    <div class="wrap-checkbox-round">
+      <div class="round">
+        <input on:click="printInfoForMethodWhi()" class={$classeColorCheckbox} id={$idCheckboxes} type="checkbox" />
+        <label for={$labelForIdCheckboxes}></label>
+      </div>
+    </div>
+    <p class={$classesColorText}>{text}</p>
+  -->
+  <p class="{classesColorText}">
+    <input on:click="printInfoForMethodWhi()" name="color" type="radio" />
+    {methodName}
+  </p>
+</div>
+
+<script>
+  import allData from "../../../data/allData"
+  import cl from "node-cl-log"
+
+  export default {
+    data() {
+      return {
+        classeColorCheckbox: "color-checkbox__input_color_white",
+        classesColorText: "color-text__method-white",
+        // labelForIdCheckboxes: "white",
+        // idCheckboxes: "white",
+        methodName: allData.methodWhiEn.methodName
+      }
+    },
+    methods: {
+      printInfoForMethodWhi() {
+        store.set({
+          classColorText: "color-text__method-white",
+          classSection: "whi-command",
+          methodName: allData.methodWhiEn.methodName,
+          colorNameOnPage: allData.methodWhiEn.colorName,
+          exampleTextOnPage: allData.methodWhiEn.exampleText
+          // colorNameRu: allData.methodWhiRu.colorName,
+          // exampleTextRu: allData.methodWhiRu.exampleText,
+          // colorNameBy: allData.methodWhiBy.colorName,
+          // exampleTextBy: allData.methodWhiBy.exampleText
+        })
+        // cl.whi(`Hi, I'm white color text!`)
+      }
+    }
+  }
+</script>

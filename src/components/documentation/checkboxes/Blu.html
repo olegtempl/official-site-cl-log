@@ -1,0 +1,62 @@
+<div class="container-checkbox">
+  <!--
+    <div class="wrap-checkbox-round">
+        <div class="round">
+          <input on:click="printInfoForMethodBlu()" class={classeColorCheckbox} id={idCheckboxes} type="checkbox" />
+          <label for={labelForIdCheckboxes}></label>
+        </div>
+    </div>
+    <p class={classColorText}>{text}</p>
+  -->
+
+  <p class="{classesColorText}">
+    <input on:click="printInfoForMethodBlu()" name="color" type="radio" />
+    {methodName}
+  </p>
+</div>
+
+<script>
+  import allData from "../../../data/allData"
+  import cl from "node-cl-log"
+
+  export default {
+    data() {
+      return {
+        classColorCheckbox: "color-checkbox__input_color_blue",
+        classColorText: "color-text__method-blue",
+        // labelForIdCheckboxes: "blue",
+        // idCheckboxes: "blue",
+        methodName: allData.methodBluEn.methodName
+      }
+    },
+    methods: {
+      printInfoForMethodBlu() {
+        store.set({
+          classColorText: "color-text__method-blue",
+          classSection: "blu-command",
+          methodName: allData.methodBluEn.methodName,
+          colorNameEn: allData.methodBluEn.colorName,
+          exampleTextEn: allData.methodBluEn.exampleText
+          // colorNameRu: allData.methodBluRu.colorName,
+          // exampleTextRu: allData.methodBluRu.exampleText,
+          // colorNameBy: allData.methodBluBy.colorName,
+          // exampleTextBy: allData.methodBluBy.exampleText
+        })
+        // cl.blu(`Hi, I'm blu color text!`)
+      }
+    }
+  }
+</script>
+
+<style>
+  .round
+    input[type="checkbox"].color-checkbox__input_color_blue:checked
+    + label {
+    background-color: #077fd7;
+    border-color: #077fd7;
+  }
+
+  .color-text__method-blue {
+    color: #077fd7;
+  }
+</style>

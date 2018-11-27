@@ -1,0 +1,62 @@
+<div class="container-checkbox">
+  <!--
+    <div class="wrap-checkbox-round">
+      <div class="round">
+        <input on:click="printInfoForMethodMag()" class={$classeColorCheckbox} id={$idCheckboxes} type="checkbox" />
+        <label for={$labelForIdCheckboxes}></label>
+      </div>
+    </div>
+    <p class={$classesColorText}>{text}</p>
+  -->
+  <p class="{classesColorText}">
+    <input on:click="printInfoForMethodMag()" name="color" type="radio" />
+    {methodName}
+  </p>
+</div>
+
+<script>
+  import allData from "../../../data/allData"
+  import cl from "node-cl-log"
+
+  export default {
+    data() {
+      return {
+        classeColorCheckbox: "color-checkbox__input_color_magenta",
+        classesColorText: "color-text__method-magenta",
+        // labelForIdCheckboxes: "magenta",
+        // idCheckboxes: "magenta",
+        methodName: allData.methodMagEn.methodName
+        // text: "mag"
+      }
+    },
+    methods: {
+      printInfoForMethodMag() {
+        store.set({
+          classColorText: "color-text__method-magenta",
+          classSection: "mag-command",
+          methodName: allData.methodMagEn.methodName,
+          colorNameOnPage: allData.methodMagEn.colorName,
+          exampleTextOnPage: allData.methodMagEn.exampleText
+          // colorNameRu: allData.methodMagRu.colorName,
+          // exampleTextRu: allData.methodMagRu.exampleText,
+          // colorNameBy: allData.methodMagBy.colorName,
+          // exampleTextBy: allData.methodMagBy.exampleText
+        })
+        // cl.mag(`Hi, I'm magenta color text!`)
+      }
+    }
+  }
+</script>
+
+<style>
+  .round
+    input[type="checkbox"].color-checkbox__input_color_magenta:checked
+    + label {
+    background-color: #8b06ba;
+    border-color: #8b06ba;
+  }
+
+  .color-text__method-magenta {
+    color: #8b06ba;
+  }
+</style>

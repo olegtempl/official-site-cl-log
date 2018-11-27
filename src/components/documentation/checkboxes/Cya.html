@@ -1,0 +1,62 @@
+<div class="container-checkbox">
+  <!--
+    <div class="wrap-checkbox-round">
+        <div class="round">
+          <input on:click="printInfoForMethodCya()" class={$classeColorCheckbox} id={$idCheckboxes} type="checkbox" />
+          <label for={$labelForIdCheckboxes}></label>
+        </div>
+    </div>
+    <p class={$classesColorText}>{text}</p>
+  -->
+
+  <p class="{classesColorText}">
+    <input on:click="printInfoForMethodCya()" name="color" type="radio" />
+    {methodName}
+  </p>
+</div>
+
+<script>
+  import allData from "../../../data/allData"
+  import cl from "node-cl-log"
+
+  export default {
+    data() {
+      return {
+        classeColorCheckbox: "color-checkbox__input_color_cyan",
+        classesColorText: "color-text__method-cyan",
+        // labelForIdCheckboxes: "cyan",
+        // idCheckboxes: "cyan",
+        methodName: allData.methodCyaEn.methodName
+      }
+    },
+    methods: {
+      printInfoForMethodCya() {
+        store.set({
+          classColorText: "color-text__method-cyan",
+          classSection: "cya-command",
+          methodName: allData.methodCyaEn.methodName,
+          colorNameOnPage: allData.methodCyaEn.colorName,
+          exampleTextEn: allData.methodCyaEn.exampleText
+          // colorNameRu: allData.methodCyaRu.colorName,
+          // exampleTextRu: allData.methodCyaRu.exampleText,
+          // colorNameBy: allData.methodCyaBy.colorName,
+          // exampleTextBy: allData.methodCyaBy.exampleText
+        })
+        // cl.cya(`Hi, I'm cyan color text!`)
+      }
+    }
+  }
+</script>
+
+<style>
+  .round
+    input[type="checkbox"].color-checkbox__input_color_cyan:checked
+    + label {
+    border-color: #04c0cc;
+    background-color: #04c0cc;
+  }
+
+  .color-text__method-cyan {
+    color: #04c0cc;
+  }
+</style>

@@ -1,0 +1,74 @@
+<div class="promo-field">
+    <code class="promo-command">
+        > npm i --save-dev node-cl-log
+        <br> > const cl = require('node-cl-log');
+        <br> > cl.red('Hello colorful world in console');
+    </code>
+    <div class="promo-command-example">
+        <p class="promo-command-example__text"><span class="color_red">Hello colorful world in console</span></p>
+    </div>
+    <ul class="links-panel__list">
+        <li class="links-panel__item git"><a class="links-panel__link" href="#" title="Go to github repository">Github</a></li>
+        <li class="links-panel__item npm"><a class="links-panel__link" href="#" title="Go to npm repository">Npm</a></li>
+    </ul>
+</div>
+
+
+<script>
+export default {
+    data() {
+        return {
+        }
+    },
+    methods: {
+
+    }
+}
+</script>
+
+
+<style>
+  /*
+  Promo-block
+*/
+
+.promo-field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 90px 0 120px 0;
+  background-color: #615F5F;
+  border-radius: 0 0 35px 35px;
+}
+
+.promo-command {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 56px;
+  color: #FFFFFF;
+}
+
+.promo-command-example {
+  width: 60%;
+  margin: auto;
+  padding-bottom: 157px;
+}
+
+.promo-command-example__text {
+  font-size: 38px;
+  font-weight: 500;
+  line-height: 56px;
+  color: #FFFFFF;
+  margin-top: 55px;
+}
+</style>

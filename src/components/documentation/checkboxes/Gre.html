@@ -1,0 +1,61 @@
+<div class="container-checkbox">
+  <!--
+    <div class="wrap-checkbox-round">
+      <div class="round">
+        <input on:click="printInfoForMethodGre()" class={classeColorCheckbox} id={idCheckboxes} type="radio" />
+        <label for={labelForIdCheckboxes}></label>
+      </div>
+    </div>
+  -->
+
+  <p class="color {classesColorText}">
+    <input on:click="printInfoForMethodGre()" name="color" type="radio" />
+    {methodName}
+  </p>
+</div>
+
+<script>
+  import allData from "../../../data/allData"
+  import cl from "node-cl-log"
+
+  export default {
+    data() {
+      return {
+        classeColorCheckbox: "color-checkbox__input_color_green",
+        classesColorText: "color-text__method-green",
+        // labelForIdCheckboxes: "green",
+        // idCheckboxes: "green",
+        methodName: allData.methodGreEn.methodName
+      }
+    },
+    methods: {
+      printInfoForMethodGre() {
+        store.set({
+          classColorText: "color-text__method-green",
+          classSection: "gre-command",
+          methodName: allData.methodGreEn.methodName,
+          colorNameOnPage: allData.methodGreEn.colorName,
+          exampleTextOnPage: allData.methodGreEn.exampleText
+          // colorNameRu: allData.methodGreRu.colorName,
+          // exampleTextRu: allData.methodGreRu.exampleText,
+          // colorNameBy: allData.methodGreBy.colorName,
+          // exampleTextBy: allData.methodGreBy.exampleText
+        })
+        // cl.gre(`Hi, I'm green color text!`)
+      }
+    }
+  }
+</script>
+
+<style>
+  .round
+    input[type="checkbox"].color-checkbox__input_color_green:checked
+    + label {
+    background-color: #37cb04;
+    border-color: #37cb04;
+  }
+
+  .color-text__method-green {
+    color: #37cb04;
+  }
+</style>

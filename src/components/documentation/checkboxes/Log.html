@@ -1,0 +1,68 @@
+<div class="container-checkbox">
+  <!--
+    <div class="wrap-checkbox-round">
+      <div class="round">
+        <input on:click="printInfoForMethodLog()" class={$classeColorCheckbox} id={$idCheckboxes} type="checkbox" />
+        <label for={$labelForIdCheckboxes}></label>
+      </div>
+    </div>
+    <p class={$classesColorText}>{text}</p>
+  -->
+
+  <p class="{classesColorText}">
+    <input on:click="printInfoForMethodLog()" name="color" type="radio" />
+    {methodName}
+  </p>
+</div>
+
+<script>
+  import allData from "../../../data/allData"
+  import cl from "node-cl-log"
+
+  export default {
+    data() {
+      return {
+        classeColorCheckbox: "color-checkbox__input_color_log",
+        classesColorText: "color-text__method-log",
+        // labelForIdCheckboxes: "log",
+        // idCheckboxes: "log",
+        methodName: allData.methodLogEn.methodName
+      }
+    },
+    methods: {
+      printInfoForMethodLog() {
+        store.set({
+          classColorText: "color-text__method-log",
+          classSection: "log-command",
+          methodName: allData.methodLogEn.methodName,
+          colorNameOnPage: allData.methodLogEn.colorName,
+          exampleTextOnPage: allData.methodLogEn.exampleText
+          // colorNameRu: allData.methodLogRu.colorName,
+          // exampleTextRu: allData.methodLogRu.exampleText,
+          // colorNameBy: allData.methodLogBy.colorName,
+          // exampleTextBy: allData.methodLogBy.exampleText
+        })
+
+        // cl.log(`Hi, I'm usual console.log!`)
+      }
+    }
+  }
+</script>
+
+<style>
+  .round
+    input[type="checkbox"].color-checkbox__input_color_white:checked
+    + label,
+  .round
+    input[type="checkbox"].color-checkbox__input_color_log:checked
+    + label {
+    background-color: #c4c4c4;
+    border-color: #c4c4c4;
+  }
+
+  .color-text__method-white,
+  .color-text__method-log
+    :global(h5.example-to-use__headline, p.arrow, p.result-text, p.color) {
+    color: #c4c4c4;
+  }
+</style>

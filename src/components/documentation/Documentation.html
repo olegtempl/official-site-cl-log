@@ -1,0 +1,204 @@
+<!-- for language panel -->
+<!--
+  dataEn : {
+    exampleHeadline: allData.methodsDataEn.exampleHeadline,
+    exampleSpan:  allData.methodsDataEn.exampleSpan,
+    exampleToUseHeadline: allData.methodsDataEn.exampleToUseHeadline,
+    exampleCommandTextUseMethod: allData.methodsDataEn.exampleCommandTextUseMethod,
+    resultTextUseMethod:  allData.methodsDataEn.resultTextUseMethod
+  },
+  dataRu : {
+    exampleHeadline: allData.methodsDataRu.exampleHeadline,
+    exampleSpan:  allData.methodsDataRu.exampleSpan,
+    exampleToUseHeadline: allData.methodsDataRu.exampleToUseHeadline,
+    exampleCommandTextUseMethod: allData.methodsDataRu.exampleCommandTextUseMethod,
+    resultTextUseMethod:  allData.methodsDataRu.resultTextUseMethod
+  },
+  dataBy : {
+    exampleHeadline: allData.methodsDataBy.exampleHeadline,
+    exampleSpan:  allData.methodsDataBy.exampleSpan,
+    exampleToUseHeadline: allData.methodsDataBy.exampleToUseHeadline,
+    exampleCommandTextUseMethod: allData.methodsDataBy.exampleCommandTextUseMethod,
+    resultTextUseMethod:  allData.methodsDataBy.resultTextUseMethod
+  }
+-->
+
+<main>
+  <div class="color-methods-panel">
+    <fieldset class="color-methods">
+      <CheckboxRed />
+      <CheckboxGre />
+      <CheckboxYel />
+      <CheckboxMag />
+      <CheckboxCya />
+      <CheckboxWhi />
+      <CheckboxLog />
+      <!-- <ButtonAllMethods /> -->
+    </fieldset>
+  </div>
+
+  <PrintInfoForMethod />
+  <!-- <PrintAllMethods /> -->
+</main>
+
+<script>
+  // checkbox panel
+  import CheckboxRed from "./checkboxes/Red.html"
+  import CheckboxGre from "./checkboxes/Gre.html"
+  import CheckboxYel from "./checkboxes/Yel.html"
+  import CheckboxMag from "./checkboxes/Mag.html"
+  import CheckboxCya from "./checkboxes/Cya.html";
+  import CheckboxWhi from "./checkboxes/Whi.html";
+  import CheckboxLog from "./checkboxes/Log.html"
+  import ButtonAllMethods from './ButtonAllMethods.html'
+  // // documentation
+  import PrintInfoForMethod from "./PrintInfoForMethod.html"
+  // import PrintAllMethods from './PrintAllMethods.html'
+
+  export default {
+    components: {
+      CheckboxRed,
+      CheckboxGre,
+      CheckboxYel,
+      CheckboxMag,
+      CheckboxCya,
+      CheckboxWhi,
+      CheckboxLog,
+      ButtonAllMethods,
+      PrintInfoForMethod,
+      // PrintAllMethods
+    },
+    data() {
+      return {}
+    },
+    methods: {}
+  }
+</script>
+
+<style>
+  /*
+  Documentation
+*/
+
+  .documentation {
+    margin: 202px 0 178px;
+  }
+
+  .main__headline {
+    font-size: 64px;
+    line-height: 75px;
+    color: #000000;
+    text-align: center;
+    padding-bottom: 35px;
+  }
+
+  .main__headline_device_min {
+    display: none;
+  }
+
+  /*
+  Install-command
+*/
+
+  .install-command {
+    width: 510px;
+    background-color: rgba(97, 95, 95, 0.87);
+    border-radius: 35px 35px 0 0;
+    margin: auto;
+  }
+
+  .install-command__text {
+    color: #ffffff;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 10px;
+  }
+
+  .install-command_device_min {
+    display: none;
+  }
+
+  /*
+  Example
+*/
+
+  .example {
+    width: 92%;
+    margin: auto;
+    border: 2px solid #615f5f;
+    border-radius: 35px;
+    background-color: white;
+  }
+
+  .example:not(:first-of-type) {
+    margin-top: 66px;
+  }
+
+  .example__headline {
+    font-size: 48px;
+    line-height: 56px;
+    font-weight: 600;
+    padding: 53px 0 40px 44px;
+  }
+
+  .example__text {
+    font-weight: 500;
+    padding: 40px 80px 40px 36px;
+    min-height: 128px;
+  }
+
+  .example-to-use {
+    margin: 25px 16px 24px 16px;
+  }
+
+  .example-to-use__headline {
+    padding-left: 35px;
+  }
+
+  .example-command {
+    width: 65%;
+    margin: 20px 10px 0 0;
+    background-color: #615f5f;
+    border-radius: 35px;
+    padding: 20px 20px 80px 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .example-command__text {
+    display: inline;
+    font-size: 48px;
+    line-height: 70px;
+    font-weight: 500;
+    color: #ffffff;
+    margin-bottom: 45px;
+  }
+
+  .example .result-command-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-left: 20%;
+  }
+
+  .arrow {
+    margin-bottom: 50px;
+  }
+
+  .arrow:after {
+    content: "\21A7";
+    font-size: 160px;
+  }
+</style>

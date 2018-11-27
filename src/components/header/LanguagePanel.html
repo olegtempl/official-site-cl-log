@@ -1,0 +1,59 @@
+<!-- 
+    TODO:
+        * выбранный язык страницы имеет подсвечивает кнопку специфическим цветом 
+
+ -->
+
+<fieldset class="language-panel">
+    <button  class="language-button" on:click="changeLanguageForRu()">Ru</button>
+    <button class="language-button" on:click="changeLanguageForEn()">En</button>
+    <button class="language-button" on:click="changeLanguageForBy()">By</button>
+</fieldset>
+
+
+
+<script>
+import allData from '../../data/allData';
+
+
+export default {
+    data() {
+        return {
+        }
+    },
+    methods: {
+        changeLanguageForRu() {
+            store.set({
+                languagePage: "ru",
+                exampleHeadline: allData.methodsDataRu.exampleHeadline,
+                exampleSpan:  allData.methodsDataRu.exampleSpan,
+                exampleToUseHeadline: allData.methodsDataRu.exampleToUseHeadline,
+                exampleCommandTextUseMethod: allData.methodsDataRu.exampleCommandTextUseMethod,
+                resultTextUseMethod:  allData.methodsDataRu.resultTextUseMethod  
+             });
+        },
+        changeLanguageForEn() {
+            store.set({ 
+                languagePage: "en",
+                exampleHeadline: allData.methodsDataEn.exampleHeadline,
+                exampleSpan:  allData.methodsDataEn.exampleSpan,
+                exampleToUseHeadline: allData.methodsDataEn.exampleToUseHeadline,
+                exampleCommandTextUseMethod: allData.methodsDataEn.exampleCommandTextUseMethod,
+                resultTextUseMethod:  allData.methodsDataEn.resultTextUseMethod   
+            });
+        },
+        changeLanguageForBy() {
+            store.set({
+                languagePage: "by",
+                exampleHeadline: allData.methodsDataBy.exampleHeadline,
+                exampleSpan:  allData.methodsDataBy.exampleSpan,
+                exampleToUseHeadline: allData.methodsDataBy.exampleToUseHeadline,
+                exampleCommandTextUseMethod: allData.methodsDataBy.exampleCommandTextUseMethod,
+                resultTextUseMethod:  allData.methodsDataBy.resultTextUseMethod  
+             });
+
+        }
+    }
+}
+</script>
+
